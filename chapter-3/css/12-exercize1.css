@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(202, 200, 200);
+}
+
+.container {
+    width: 35%;
+    height: 450px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px;
+    margin-top: 25px;
+    border-radius: 4px;
+}
+
+.gsis-logo {
+    width: 90%;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.second-logo {
+    width: 70%;
+    float: right;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    height: 40px;
+    background-color: rgb(99, 99, 156);
+    color: white;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.instruct {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.top {
+    margin-top: 20px;
+}
+
+.bold {
+    font-size: 1.6rem;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.bot-padding {
+    padding-bottom: 5px;
+}
+
+.user-class {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border-class {
+    width: 90%;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    background-color: rgb(225, 235, 239);
+}
+
+.upper-padding {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.form-btn {
+    width:90%;
+    height: 30px;
+    border-radius: 4px;
+    border: 0;
+    background-color: rgb(96, 96, 181);
+    color: white;
+}
+
+.pad {
+    margin-top: 20px;
+}
+
+.link-cl {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: rgb(47, 116, 139);
+}
+
+.middle {
+    /* width: 93%; */
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.form-btn:hover {
+    background-color: rgb(59, 59, 139) ;
+}
+
+.shadow {
+    box-shadow: 0px 0px 10px grey;
+}

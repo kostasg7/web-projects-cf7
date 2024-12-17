@@ -1,0 +1,24 @@
+/*βρισκει ολα τα attributes*/
+h2[id], p[id] {
+    background-color: aquamarine; 
+}
+
+a[href="#"] {
+    background-color: blueviolet;
+}
+
+/*βρισκει ολα τα elements που εχουν κλαση*/
+/* Το συμβολο ^ βρισκει οτι ξεκιναει με info*/
+*[class^="info"] { 
+    color: green;
+}
+
+/*Το συμβολο * σημαινει περιεχει  */
+*[class*="text"] {
+    background-color: burlywood; 
+}
+
+/* Το συμβολο $ σημαινει τελειωνει με */
+h2[class$="title"] {
+    font-style: italic; 
+}
