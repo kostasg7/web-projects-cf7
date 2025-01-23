@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container m-2 border">
+    <div class="flex pl-3 py-2">
+      <a class="text-sm text-blue-500 border-b-2 outline-style:solid border-bottom border-indigo-300 pb-2" selected>Πεδία αίτησης</a>
+      <a href="./page2.html" class="pl-5 text-sm">Ακαδημαικά Προσόντα</a>
+      <a href="./page3.html" class="pl-5 text-sm">Διδακτική και Εργασιακή Εμπειρία</a>
+    </div>
+    <div>
+
+      <div class="">
+        <fieldset class="p-4 rounded-md border border-solid fieldset-top-border flex justify-between">
+              <legend class="font-semibold text-xs">Προσωπικά Στοιχεία</legend>
+
+              <label for="afm">ΑΦΜ: </label>
+              <input type="text" id="afm" name="afm" class="border bg-gray-200 rounded-md">
+
+              <label for="name">Όνομα:</label>
+              <input type="text" id="name" name="name" class="border bg-gray-200 rounded-md">
+
+              <label for="surname">Επώνυμο:</label>
+              <input type="text" id="surname" name="surname" class="border bg-gray-200 rounded-md">
+        </fieldset>
+      </div>
+      <hr>
+    </div>
+    <div class="p-4 border border-solid flex justify-between columns-6">
+      <label for="fathername">Όνομα Πατρός: </label>
+      <input type="text" id="afm" name="afm" class="border bg-gray-200 rounded-md">
+
+      <label for="motheename">Όνομα Μητρός:</label>
+      <input type="text" id="name" name="name" class="border bg-gray-200 rounded-md">
+      <label for="date">Ημερομηνία Γέννησης*:</label>
+      <input type="date" id="date" name="date" class="border bg-gray-200 rounded-md">
+    </div>
+    <div class="p-4 border border-solid flex justify-start">
+      <label for="sex" class="w-44">Φύλο*:</label>
+      <select name="sex" id="sex" class="ml-5 border border-solid border-2 border-gray-300">
+        <option value="sex" class="border border-solid border-gray-300">'Αρρεν</option>
+        <option value="sex">Θήλυ</option>
+      </select>
+    </div>
+    <div class="flex items-center justify-between mb-4 pl-4 p-4 border">
+      <div class="w-1/2 flex justify-between pr-12">
+        <label for="amka" class="text-sm font-normal flex">
+          AMKA*:
+          <div class="flex items-center justify-center bg-white-500 border border-black rounded-full w-4 h-4 ml-1 mt-1">i</div>
+        </label>
+        <input type="text" name="amka" id="amka" class="border rounded-md ml-10 pl-8 w-5/12">
+      </div>
+      <div class="w-1/2 flex justify-center">
+        <button class="py-0.5 px-5 bg-blue-500 text-white rounded-md">Προβολή</button>
+        <input type="text" class="w-5/6 bg-gray-200 pl-3" placeholder="AKMKA.pdf">
+        <button class="flex items-center px-2 border border-solid border-red-500 text-red-500">x</button>
+      </div>
+    </div>
+    <!-- <div class="flex items-center space-x-2 mb-4 p-4 border border-solid justify-between">
+      <label for="amka" class="text-sm font-medium text-gray-700 flex">
+        ΑΜΚΑ*:<div class="flex items-center justify-center bg-white-500 border border-black rounded-full w-4 h-4 ml-1 mt-1">i</div>
+      </label>
+      
+      <input type="text" id="amka" name="amka" class="border rounded-md ml-10 pl-8">
+      <button class="py-0.5 px-5 bg-blue-500 text-white rounded-md">Προβολή</button>
+      <input type="text" class="" placeholder="AKMKA.pdf">
+      <button class="flex items-center px-2 border border-solid border-red-500 text-red-500">x</button>
+    </div> -->
+
+    <div class="flex items-center justify-between mb-4 p-4 border">
+      <div class="w-1/2 flex justify-between pr-12">
+        <label for="id" class="text-sm font-normal flex">
+          Αρ Δελτίου Ταυτότητας ή Διαβατηρίου*:
+          <div class="flex items-center justify-center bg-white-500 border border-black rounded-full w-4 h-4 ml-1 mt-1">i</div>
+        </label>
+        <input type="text" name="id" id="id" class="border rounded-md ml-10 pl-8 w-5/12">
+      </div>
+      <div class="w-1/2 flex justify-center">
+        <button class="py-0.5 px-5 bg-blue-500 text-white rounded-md">Προβολή</button>
+        <input type="text" class="w-5/6 bg-gray-200 pl-3" placeholder="ΤΑΥΤΟΤΗΤΑ.pdf">
+        <button class="flex items-center px-2 border border-solid border-red-500 text-red-500">x</button>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-between mb-4 pl-4 pt-2 border text-sm pb-2">
+      <div class="flex">
+        <label for="choice" class="text-sm">Εκπλήρωση Στρατιωτικών Υποχρεώσεων ή Νόμιμη Απαλλαγή από αυτές</label>
+        <div class="flex items-center justify-center bg-white-500 border border-black rounded-full w-4 h-4 ml-1 mt-1">i</div>
+        <select name="choice" id="choice" class="ml-3 border">
+          <option value="choice">ΝΑΙ</option>
+          <option value="choice">ΟΧΙ</option>
+        </select>
+      </div>
+      <div class="w-1/2 flex justify-end pr-4">
+        <button class="py-0.5 px-5 bg-blue-500 text-white rounded-md">Προβολή</button>
+        <input type="text" class="w-3/6 bg-gray-200 pl-3" placeholder="ΣΤΡΑΤΟΛΟΓΙΚΗ ΚΑΤΑΣΤΑΣΗ.pdf">
+        <button class="flex items-center px-2 border border-solid border-red-500 text-red-500">x</button>
+      </div>
+    </div>
+    <div class="flex items-center justify-between mb-4 pl-4 pt-2 border text-sm pb-2">
+      <div class="text-sm w-2/3">
+        <label for="choice2">Είστε πολίτης κράτους μέλους της ΕΕ ή Βορειοηπειρώτης ή Κύπριος Ομογενής ή Ομογενής Αλλοδαπός εξ Αιγύπτου, Κωνσταντινούπολης, Ίμβρου, Τένεδου;</label>
+        <select name="choice" id="choice" class="pt-1 border block">
+          <option value="choice2">ΝΑΙ</option>
+          <option value="choice2">ΟΧΙ</option>
+        </select>
+      </div>
+      <div class="w-1/2 flex justify-end pr-4">
+        <button class="py-0.5 px-5 bg-teal-500 text-white rounded-md">Επισύναψη</button>
+        <input type="text" class="w-b bg-gray-200 pl-3" placeholder="Όνομα αρχείου.pdf">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
